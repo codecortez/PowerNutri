@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PowerNutri | Suplementos Growth e Vitafor - Promoção</title>
-    <meta name="description" content="Loja oficial PowerNutri. As melhores ofertas em Creatina Growth, Omegafor Plus Vitafor e Maca Peruana.">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script>
+  <title>PowerNutri | Suplementos Originais Growth e Vitafor - Ofertas</title>
+
+  <!-- SEO básico -->
+  <meta name="description" content="Suplementos originais (Growth & Vitafor) com envio rápido via Mercado Livre. Ofertas selecionadas: creatina, ômega 3, multivitamínico e mais." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph (link bonito no WhatsApp/Instagram) -->
+  <meta property="og:title" content="PowerNutri | Suplementos Originais - Ofertas" />
+  <meta property="og:description" content="Suplementos originais Growth & Vitafor com envio rápido via Mercado Livre. Confira as ofertas selecionadas." />
+  <meta property="og:type" content="website" />
+  <!-- Coloque uma imagem sua aqui (preferível 1200x630) -->
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- Favicon (opcional) -->
+  <!-- <link rel="icon" href="/favicon.ico" /> -->
+
+  <!-- =========================
+       META PIXEL (BASE CODE)
+  ========================== -->
+  <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -18,208 +32,604 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    
-    // ATENÇÃO: SUBSTITUA O CÓDIGO ABAIXO PELO SEU ID DO PIXEL
-    fbq('init', 'SEU_ID_DO_PIXEL_AQUI'); 
-    
+
+    fbq('init', 'SEU_PIXEL_ID_AQUI'); // <-- TROQUE AQUI
     fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=SEU_ID_DO_PIXEL_AQUI&ev=PageView&noscript=1"
-    /></noscript>
-    <style>
-        html { scroll-behavior: smooth; }
-        .hero-bg {
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-        }
-        .cta-pulse { animation: pulse 2s infinite; }
-        @keyframes pulse {
-            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
-            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
-        }
-        .zap-bounce { animation: bounce 2s infinite; }
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-            40% {transform: translateY(-10px);}
-            60% {transform: translateY(-5px);}
-        }
-    </style>
+  </script>
+  <!-- =========================
+       FIM META PIXEL (BASE)
+  ========================== -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    html { scroll-behavior: smooth; }
+
+    /* HERO: menos "largura" da foto (zoom) no mobile */
+    .hero-bg {
+      background:
+        linear-gradient(rgba(0,0,0,0.82), rgba(0,0,0,0.72)),
+        url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+      background-repeat: no-repeat;
+      background-position: center 35%;
+      background-size: 150%; /* "zoom" no mobile (mostra menos largura) */
+    }
+    @media (min-width: 768px) {
+      .hero-bg {
+        background-size: cover;     /* no desktop, cover fica mais natural */
+        background-position: center;
+      }
+    }
+
+    .cta-pulse { animation: pulse 2s infinite; }
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+      70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+      100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+    }
+
+    .zap-bounce { animation: bounce 2s infinite; }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+      40% {transform: translateY(-10px);}
+      60% {transform: translateY(-5px);}
+    }
+
+    /* Suaviza o layout do header fixo com âncoras */
+    section { scroll-margin-top: 90px; }
+  </style>
 </head>
+
 <body class="bg-gray-50 text-gray-800 font-sans">
 
-    <header class="bg-white shadow-md fixed w-full z-40">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="text-2xl font-bold text-green-600">Power<span class="text-black">Nutri</span>⚡</div>
-            <a href="#produtos" class="bg-green-600 text-white px-5 py-2 rounded-full font-bold hover:bg-green-700 transition shadow-md">
-                Ver Catálogo
+  <!-- Meta Pixel (noscript) -->
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=SEU_PIXEL_ID_AQUI&ev=PageView&noscript=1" />
+  </noscript>
+
+  <!-- HEADER -->
+  <header class="bg-white/95 backdrop-blur shadow-md fixed w-full z-40">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="#topo" class="text-2xl font-bold text-green-600">
+        Power<span class="text-black">Nutri</span>⚡
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-gray-700">
+        <a href="#beneficios" class="hover:text-green-600 transition">Benefícios</a>
+        <a href="#produtos" class="hover:text-green-600 transition">Catálogo</a>
+        <a href="#depoimentos" class="hover:text-green-600 transition">Depoimentos</a>
+        <a href="#faq" class="hover:text-green-600 transition">Dúvidas</a>
+        <a href="#contato" class="hover:text-green-600 transition">Contato</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#produtos"
+          class="bg-green-600 text-white px-5 py-2 rounded-full font-bold hover:bg-green-700 transition shadow-md">
+          Ver Catálogo
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="topo" class="hero-bg min-h-screen flex items-center justify-center text-center px-4">
+    <div class="max-w-3xl text-white pt-20">
+      <div class="inline-flex flex-wrap justify-center gap-2">
+        <span class="bg-green-500 text-xs font-bold px-3 py-1 rounded uppercase tracking-wide">
+          Frete Seguro via Mercado Livre
+        </span>
+        <span class="bg-white/10 text-xs font-bold px-3 py-1 rounded uppercase tracking-wide border border-white/15">
+          Suplementos Originais
+        </span>
+      </div>
+
+      <h1 class="text-4xl md:text-6xl font-extrabold mt-5 mb-6 leading-tight">
+        Saúde, Energia e Performance Máxima
+      </h1>
+
+      <p class="text-lg md:text-xl mb-8 text-gray-200">
+        Suplementos originais (Growth & Vitafor) com envio rápido para todo o Brasil.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a href="#produtos"
+          class="cta-pulse inline-block bg-green-500 text-white text-lg font-bold px-8 py-4 rounded-full shadow-lg hover:bg-green-600 transition">
+          QUERO APROVEITAR AS OFERTAS
+        </a>
+
+        <a href="#faq"
+          class="inline-block bg-white/10 border border-white/20 text-white text-lg font-bold px-8 py-4 rounded-full hover:bg-white/15 transition">
+          TIRAR DÚVIDAS
+        </a>
+      </div>
+
+      <div class="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-gray-200/90">
+        <span><i class="fas fa-lock"></i> Compra segura</span>
+        <span><i class="fas fa-check"></i> Produtos lacrados</span>
+        <span><i class="fas fa-truck-fast"></i> Envio rápido</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BARRA DE CONFIANÇA -->
+  <section id="beneficios" class="py-10 bg-white border-b">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-6 text-center">
+        <div class="p-5 rounded-xl bg-gray-50 border">
+          <i class="fas fa-shipping-fast text-3xl text-green-600 mb-2"></i>
+          <h3 class="font-extrabold">Envio Rápido</h3>
+          <p class="text-sm text-gray-600">Evite perder dias de treino.</p>
+        </div>
+        <div class="p-5 rounded-xl bg-gray-50 border">
+          <i class="fas fa-shield-alt text-3xl text-green-600 mb-2"></i>
+          <h3 class="font-extrabold">100% Original</h3>
+          <p class="text-sm text-gray-600">Procedência e lacre garantidos.</p>
+        </div>
+        <div class="p-5 rounded-xl bg-gray-50 border">
+          <i class="fas fa-badge-check text-3xl text-green-600 mb-2"></i>
+          <h3 class="font-extrabold">Compra via ML</h3>
+          <p class="text-sm text-gray-600">Pagamento e proteção do comprador.</p>
+        </div>
+        <div class="p-5 rounded-xl bg-gray-50 border">
+          <i class="fas fa-headset text-3xl text-green-600 mb-2"></i>
+          <h3 class="font-extrabold">Suporte no WhatsApp</h3>
+          <p class="text-sm text-gray-600">Ajuda rápida para escolher melhor.</p>
+        </div>
+      </div>
+
+      <div class="mt-8 max-w-4xl mx-auto text-center text-sm text-gray-600">
+        <p class="bg-green-50 border border-green-100 rounded-xl p-4">
+          <strong>Transparência:</strong> a compra final acontece no <strong>Mercado Livre</strong>. Este site direciona para os anúncios para você comprar com segurança.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUTOS -->
+  <section id="produtos" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-extrabold mb-2">🔥 Ofertas Selecionadas</h2>
+        <p class="text-red-600 font-semibold animate-pulse">⚠️ Estoque limitado — aproveite enquanto disponível</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Produto 1 -->
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden group border">
+          <div class="h-48 bg-white flex items-center justify-center relative p-4">
+            <img loading="lazy" src="https://i.imgur.com/anhidFH.jpeg" alt="Creatina Growth 250g"
+              class="h-full w-full object-contain hover:scale-105 transition duration-300">
+            <span class="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">Mais vendido</span>
+          </div>
+          <div class="p-5 border-t">
+            <h3 class="font-extrabold text-lg">Creatina Growth 250g</h3>
+            <p class="text-xs text-gray-500 mb-3">Pura monohidratada.</p>
+
+            <ul class="text-sm text-gray-700 mb-4 space-y-1">
+              <li><i class="fa-solid fa-check text-green-600"></i> Força e explosão</li>
+              <li><i class="fa-solid fa-check text-green-600"></i> Ideal para treino pesado</li>
+              <li><i class="fa-solid fa-check text-green-600"></i> Original e lacrado</li>
+            </ul>
+
+            <a href="https://mercadolivre.com/sec/2MrS3jq" target="_blank" rel="noopener"
+              class="ml-buy block w-full bg-green-600 hover:bg-green-700 text-white text-center font-extrabold py-3 rounded-xl transition"
+              data-product="Creatina Growth 250g">
+              VER NO MERCADO LIVRE <i class="fas fa-external-link-alt ml-1 text-xs"></i>
             </a>
-        </div>
-    </header>
 
-    <section class="hero-bg h-screen flex items-center justify-center text-center px-4">
-        <div class="max-w-3xl text-white pt-16">
-            <span class="bg-green-500 text-xs font-bold px-3 py-1 rounded uppercase tracking-wide">Frete Seguro via Mercado Livre</span>
-            <h1 class="text-4xl md:text-6xl font-bold mt-4 mb-6 leading-tight">Saúde, Energia e Performance Máxima</h1>
-            <p class="text-lg md:text-xl mb-8 text-gray-300">Suplementos originais (Growth & Vitafor) com envio rápido para todo o Brasil.</p>
-            
-            <a href="#produtos" class="cta-pulse inline-block bg-green-500 text-white text-lg font-bold px-8 py-4 rounded-full shadow-lg hover:bg-green-600 transition">
-                QUERO APROVEITAR AS OFERTAS
+            <button type="button"
+              class="w-full mt-3 bg-gray-900 hover:bg-black text-white text-center font-bold py-3 rounded-xl transition"
+              onclick="document.getElementById('whatsappBtn').click();"
+            >
+              TIRAR DÚVIDA NO WHATSAPP
+            </button>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden border">
+          <div class="h-48 bg-white flex items-center justify-center p-4 relative">
+            <img loading="lazy" src="https://i.imgur.com/BpXKtik.jpeg" alt="Omegafor Plus Vitafor"
+              class="h-full w-full object-contain hover:scale-105 transition duration-300">
+            <span class="absolute top-3 right-3 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">Vitafor</span>
+          </div>
+          <div class="p-5 border-t">
+            <h3 class="font-extrabold text-lg">Omegafor Plus Vitafor</h3>
+            <p class="text-xs text-gray-500 mb-3">120 cápsulas.</p>
+
+            <ul class="text-sm text-gray-700 mb-4 space-y-1">
+              <li><i class="fa-solid fa-check text-green-600"></i> Suporte ao coração</li>
+              <li><i class="fa-solid fa-check text-green-600"></i> Rotina e bem-estar</li>
+              <li><i class="fa-solid fa-check text-green-600"></i> Procedência garantida</li>
+            </ul>
+
+            <a href="https://mercadolivre.com/sec/2MVjd1C" target="_blank" rel="noopener"
+              class="ml-buy block w-full bg-green-600 hover:bg-green-700 text-white text-center font-extrabold py-3 rounded-xl transition"
+              data-product="Omegafor Plus Vitafor">
+              VER NO MERCADO LIVRE <i class="fas fa-external-link-alt ml-1 text-xs"></i>
             </a>
-            
-            <div class="mt-6 flex justify-center space-x-4 text-sm text-gray-400">
-                <span><i class="fas fa-lock"></i> Compra Segura</span>
-                <span><i class="fas fa-check"></i> Original</span>
-            </div>
+
+            <button type="button"
+              class="w-full mt-3 bg-gray-900 hover:bg-black text-white text-center font-bold py-3 rounded-xl transition"
+              onclick="document.getElementById('whatsappBtn').click();"
+            >
+              TIRAR DÚVIDA NO WHATSAPP
+            </button>
+          </div>
         </div>
-    </section>
 
-    <section class="py-12 bg-white border-b">
-        <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8 text-center">
-            <div class="p-4">
-                <i class="fas fa-shipping-fast text-4xl text-green-600 mb-2"></i>
-                <h3 class="font-bold">Envio Rápido</h3>
-                <p class="text-sm text-gray-600">Não perca dias de treino.</p>
-            </div>
-            <div class="p-4">
-                <i class="fas fa-shield-alt text-4xl text-green-600 mb-2"></i>
-                <h3 class="font-bold">100% Original</h3>
-                <p class="text-sm text-gray-600">Garantia de procedência.</p>
-            </div>
-            <div class="p-4">
-                <i class="fas fa-credit-card text-4xl text-green-600 mb-2"></i>
-                <h3 class="font-bold">Compra Segura</h3>
-                <p class="text-sm text-gray-600">Via Mercado Livre.</p>
-            </div>
+        <!-- Produto 3 -->
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden border">
+          <div class="h-48 bg-white flex items-center justify-center p-4 relative">
+            <img loading="lazy" src="https://i.imgur.com/E8ahH9i.jpeg" alt="Maca Peruana 500mg"
+              class="h-full w-full object-contain hover:scale-105 transition duration-300">
+            <span class="absolute top-3 right-3 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full">Energia</span>
+          </div>
+          <div class="p-5 border-t">
+            <h3 class="font-extrabold text-lg">Maca Peruana 500mg</h3>
+            <p class="text-xs text-gray-500 mb-3">120 cápsulas.</p>
+
+            <ul class="text-sm text-gray-700 mb-4 space-y-1">
+              <li><i class="fa-solid fa-check text-green-600"></i> Energia e vigor</li>
+              <li><i class="fa-solid fa-check text-green-600"></i> Rotina e disposição</li>
+              <li><i class="fa-solid fa-check text-green-600"></i> Produto lacrado</li>
+            </ul>
+
+            <a href="https://mercadolivre.com/sec/17hdNPd" target="_blank" rel="noopener"
+              class="ml-buy block w-full bg-green-600 hover:bg-green-700 text-white text-center font-extrabold py-3 rounded-xl transition"
+              data-product="Maca Peruana 500mg">
+              VER NO MERCADO LIVRE <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+            </a>
+
+            <button type="button"
+              class="w-full mt-3 bg-gray-900 hover:bg-black text-white text-center font-bold py-3 rounded-xl transition"
+              onclick="document.getElementById('whatsappBtn').click();"
+            >
+              TIRAR DÚVIDA NO WHATSAPP
+            </button>
+          </div>
         </div>
-    </section>
 
-    <section id="produtos" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-10">
-                <h2 class="text-3xl font-bold mb-2">🔥 Ofertas Selecionadas</h2>
-                <p class="text-red-600 font-semibold animate-pulse">⚠️ Estoque limitado - Aproveite enquanto disponível</p>
-            </div>
+        <!-- Produto 4 -->
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden border">
+          <div class="h-48 bg-white flex items-center justify-center p-4 relative">
+            <img loading="lazy" src="https://i.imgur.com/AoRrxDP.jpeg" alt="Multivitamínico Growth"
+              class="h-full w-full object-contain hover:scale-105 transition duration-300">
+            <span class="absolute top-3 right-3 bg-amber-600 text-white text-xs font-bold px-3 py-1 rounded-full">Imunidade</span>
+          </div>
+          <div class="p-5 border-t">
+            <h3 class="font-extrabold text-lg">Multivitamínico Growth</h3>
+            <p class="text-xs text-gray-500 mb-3">120 cápsulas.</p>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                
-                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden group">
-                    <div class="h-48 bg-gray-200 flex items-center justify-center relative">
-                        <i class="fas fa-bolt text-4xl text-gray-400"></i>
-                        <span class="absolute top-0 right-0 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">MAIS VENDIDO</span>
-                    </div>
-                    <div class="p-5">
-                        <h3 class="font-bold text-lg">Creatina Growth 250g</h3>
-                        <p class="text-xs text-gray-500 mb-4">Pura Monohidratada. Força e Explosão.</p>
-                        <a href="https://mercadolivre.com/sec/2MrS3jq" target="_blank" class="block w-full bg-green-600 hover:bg-green-700 text-white text-center font-bold py-3 rounded-lg transition">
-                            VER PREÇO E COMPRAR <i class="fas fa-external-link-alt ml-1 text-xs"></i>
-                        </a>
-                    </div>
-                </div>
+            <ul class="text-sm text-gray-700 mb-4 space-y-1">
+              <li><i class="fa-solid fa-check text-green-600"></i> Imunidade completa</li>
+              <li><i class="fa-solid fa-check text-green-600"></i> Rotina diária</li>
+              <li><i class="fa-solid fa-check text-green-600"></i> Original e lacrado</li>
+            </ul>
 
-                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
-                    <div class="h-48 bg-gray-200 flex items-center justify-center">
-                        <i class="fas fa-heart text-4xl text-gray-400"></i>
-                    </div>
-                    <div class="p-5">
-                        <h3 class="font-bold text-lg">Omegafor Plus Vitafor</h3>
-                        <p class="text-xs text-gray-500 mb-4">120 Cápsulas. Saúde do Coração e Mente.</p>
-                        <a href="https://mercadolivre.com/sec/2MVjd1C" target="_blank" class="block w-full bg-green-600 hover:bg-green-700 text-white text-center font-bold py-3 rounded-lg transition">
-                            VER PREÇO E COMPRAR <i class="fas fa-external-link-alt ml-1 text-xs"></i>
-                        </a>
-                    </div>
-                </div>
+            <a href="https://mercadolivre.com/sec/1GbgRWB" target="_blank" rel="noopener"
+              class="ml-buy block w-full bg-green-600 hover:bg-green-700 text-white text-center font-extrabold py-3 rounded-xl transition"
+              data-product="Multivitamínico Growth">
+              VER NO MERCADO LIVRE <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+            </a>
 
-                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
-                    <div class="h-48 bg-gray-200 flex items-center justify-center">
-                        <i class="fas fa-leaf text-4xl text-gray-400"></i>
-                    </div>
-                    <div class="p-5">
-                        <h3 class="font-bold text-lg">Maca Peruana 500mg</h3>
-                        <p class="text-xs text-gray-500 mb-4">120 Cáps. Energia, Vigor e Libido.</p>
-                        <a href="https://mercadolivre.com/sec/17hdNPd" target="_blank" class="block w-full bg-green-600 hover:bg-green-700 text-white text-center font-bold py-3 rounded-lg transition">
-                            VER PREÇO E COMPRAR <i class="fas fa-external-link-alt ml-1 text-xs"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
-                    <div class="h-48 bg-gray-200 flex items-center justify-center">
-                        <i class="fas fa-shield-virus text-4xl text-gray-400"></i>
-                    </div>
-                    <div class="p-5">
-                        <h3 class="font-bold text-lg">Multivitamínico Growth</h3>
-                        <p class="text-xs text-gray-500 mb-4">120 Cáps. Imunidade completa.</p>
-                        <a href="https://mercadolivre.com/sec/1GbgRWB" target="_blank" class="block w-full bg-green-600 hover:bg-green-700 text-white text-center font-bold py-3 rounded-lg transition">
-                            VER PREÇO E COMPRAR <i class="fas fa-external-link-alt ml-1 text-xs"></i>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
+            <button type="button"
+              class="w-full mt-3 bg-gray-900 hover:bg-black text-white text-center font-bold py-3 rounded-xl transition"
+              onclick="document.getElementById('whatsappBtn').click();"
+            >
+              TIRAR DÚVIDA NO WHATSAPP
+            </button>
+          </div>
         </div>
-    </section>
 
-    <section class="py-12 bg-white">
-        <div class="container mx-auto px-4 max-w-4xl">
-            <h2 class="text-2xl font-bold text-center mb-8">Quem Comprou, Aprovou ✅</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-gray-50 p-6 rounded border-l-4 border-green-500">
-                    <p class="italic text-gray-600 mb-2">"Produtos chegaram lacrados e antes do prazo. A creatina da Growth é a melhor mesmo."</p>
-                    <p class="font-bold text-sm">- Marcos Vinícius</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded border-l-4 border-green-500">
-                    <p class="italic text-gray-600 mb-2">"Gostei da facilidade de comprar. O link vai direto pro Mercado Livre, bem seguro."</p>
-                    <p class="font-bold text-sm">- Ana Clara</p>
-                </div>
-            </div>
+      </div>
+
+      <!-- CTA secundário -->
+      <div class="mt-10 text-center">
+        <a href="#contato"
+          class="inline-flex items-center justify-center gap-2 bg-gray-900 hover:bg-black text-white font-extrabold px-8 py-4 rounded-full transition shadow">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          Precisa de ajuda para escolher?
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos" class="py-14 bg-white">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-extrabold mb-2">Quem Comprou, Aprovou ✅</h2>
+        <p class="text-gray-600">Feedback real de clientes sobre entrega e qualidade.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gray-50 p-6 rounded-2xl border shadow-sm">
+          <p class="italic text-gray-700 mb-3">"Produtos chegaram lacrados e antes do prazo. A creatina da Growth é a melhor mesmo."</p>
+          <p class="font-extrabold text-sm">— Marcos Vinícius</p>
+          <p class="text-xs text-gray-500 mt-1"><i class="fa-solid fa-star text-amber-500"></i> <i class="fa-solid fa-star text-amber-500"></i> <i class="fa-solid fa-star text-amber-500"></i> <i class="fa-solid fa-star text-amber-500"></i> <i class="fa-solid fa-star text-amber-500"></i></p>
         </div>
-    </section>
 
-    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
-        <p class="font-bold text-white text-lg mb-2">PowerNutri ⚡</p>
-        <p>Saúde • Energia • Performance</p>
-        <p class="mt-4 opacity-50">&copy; 2025 PowerNutri. Todos os direitos reservados.</p>
-    </footer>
+        <div class="bg-gray-50 p-6 rounded-2xl border shadow-sm">
+          <p class="italic text-gray-700 mb-3">"Gostei da facilidade de comprar. O link vai direto pro Mercado Livre, bem seguro."</p>
+          <p class="font-extrabold text-sm">— Ana Clara</p>
+          <p class="text-xs text-gray-500 mt-1"><i class="fa-solid fa-star text-amber-500"></i> <i class="fa-solid fa-star text-amber-500"></i> <i class="fa-solid fa-star text-amber-500"></i> <i class="fa-solid fa-star text-amber-500"></i> <i class="fa-solid fa-star text-amber-500"></i></p>
+        </div>
 
-    <a href="https://wa.me/5571999530935?text=Olá, vim pelo site PowerNutri e tenho uma dúvida sobre os suplementos." 
-       target="_blank"
-       class="zap-bounce fixed bottom-5 right-5 bg-green-500 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:bg-green-600 transition z-50">
-        <i class="fab fa-whatsapp text-3xl"></i>
-    </a>
+        <div class="bg-gray-50 p-6 rounded-2xl border shadow-sm">
+          <p class="italic text-gray-700 mb-3">"Chegou rápido e bem embalado. Atendimento no WhatsApp ajudou a escolher certinho."</p>
+          <p class="font-extrabold text-sm">— Rafael S.</p>
+          <p class="text-xs text-gray-500 mt-1"><i class="fa-solid fa-star text-amber-500"></i> <i class="fa-solid fa-star text-amber-500"></i> <i class="fa-solid fa-star text-amber-500"></i> <i class="fa-solid fa-star text-amber-500"></i> <i class="fa-solid fa-star text-amber-500"></i></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script>
-        // Função para disparar o InitiateCheckout
-        function trackCheckout(produto) {
-            if(typeof fbq !== 'undefined') {
-                fbq('track', 'InitiateCheckout', {
-                    content_name: produto,
-                    currency: 'BRL',
-                    value: 0.00
-                });
-                console.log('Pixel disparado: InitiateCheckout - ' + produto);
-            }
+  <!-- FAQ -->
+  <section id="faq" class="py-14 bg-gray-100">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-extrabold mb-2">Dúvidas Frequentes</h2>
+        <p class="text-gray-600">Clique para abrir as respostas.</p>
+      </div>
+
+      <div class="space-y-3">
+        <!-- item -->
+        <div class="faq-item bg-white border rounded-2xl overflow-hidden shadow-sm">
+          <button type="button" class="faq-btn w-full flex items-center justify-between p-5 font-extrabold text-left">
+            Os produtos são originais?
+            <i class="fa-solid fa-chevron-down transition-transform"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-gray-700">
+            Trabalhamos com produtos lacrados e de procedência. A compra final é feita no Mercado Livre, com proteção ao comprador.
+          </div>
+        </div>
+
+        <div class="faq-item bg-white border rounded-2xl overflow-hidden shadow-sm">
+          <button type="button" class="faq-btn w-full flex items-center justify-between p-5 font-extrabold text-left">
+            Como funciona a compra?
+            <i class="fa-solid fa-chevron-down transition-transform"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-gray-700">
+            Você escolhe o produto aqui e clica em “Ver no Mercado Livre”. O pagamento e o envio ficam por conta da plataforma.
+          </div>
+        </div>
+
+        <div class="faq-item bg-white border rounded-2xl overflow-hidden shadow-sm">
+          <button type="button" class="faq-btn w-full flex items-center justify-between p-5 font-extrabold text-left">
+            Quanto tempo leva o envio?
+            <i class="fa-solid fa-chevron-down transition-transform"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-gray-700">
+            O prazo depende do anúncio e da sua região. No Mercado Livre você vê o prazo exato antes de finalizar a compra.
+          </div>
+        </div>
+
+        <div class="faq-item bg-white border rounded-2xl overflow-hidden shadow-sm">
+          <button type="button" class="faq-btn w-full flex items-center justify-between p-5 font-extrabold text-left">
+            Posso tirar dúvidas antes de comprar?
+            <i class="fa-solid fa-chevron-down transition-transform"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-gray-700">
+            Sim! Chama no WhatsApp e a gente te ajuda a escolher o produto mais indicado para seu objetivo.
+          </div>
+        </div>
+
+        <div class="faq-item bg-white border rounded-2xl overflow-hidden shadow-sm">
+          <button type="button" class="faq-btn w-full flex items-center justify-between p-5 font-extrabold text-left">
+            Tem troca ou devolução?
+            <i class="fa-solid fa-chevron-down transition-transform"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-gray-700">
+            Como a compra é via Mercado Livre, as políticas de devolução e reembolso seguem as regras da plataforma.
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-8 text-center">
+        <a href="#contato" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-extrabold px-8 py-4 rounded-full transition shadow">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          Falar com suporte
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="py-14 bg-white">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-3xl font-extrabold mb-3">Precisa de ajuda?</h2>
+          <p class="text-gray-600 mb-5">
+            Se você não sabe qual suplemento escolher, chama no WhatsApp. A gente te orienta rápido.
+          </p>
+
+          <div class="space-y-3 text-gray-700">
+            <p><i class="fa-brands fa-whatsapp text-green-600"></i> WhatsApp: <strong>(71) 99953-0935</strong></p>
+            <!-- Se tiver Instagram, descomente e coloque o @ -->
+            <!-- <p><i class="fa-brands fa-instagram text-pink-600"></i> Instagram: <strong>@seuinstagram</strong></p> -->
+            <p><i class="fa-solid fa-circle-info text-gray-900"></i> Compra final via <strong>Mercado Livre</strong></p>
+          </div>
+
+          <div class="mt-6 flex gap-3 flex-wrap">
+            <a href="#produtos" class="bg-gray-900 hover:bg-black text-white font-extrabold px-6 py-3 rounded-full transition">
+              Ver ofertas
+            </a>
+            <a href="https://wa.me/5571999530935?text=Olá, vim pelo site PowerNutri e quero ajuda para escolher um suplemento."
+              target="_blank" rel="noopener"
+              class="bg-green-600 hover:bg-green-700 text-white font-extrabold px-6 py-3 rounded-full transition">
+              Chamar no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 border rounded-2xl p-6 shadow-sm">
+          <h3 class="font-extrabold text-xl mb-3">Dica rápida</h3>
+          <p class="text-gray-700 mb-4">
+            Se o foco é desempenho e força, geralmente a <strong>creatina</strong> é um dos melhores custo-benefício.
+            Se o foco é saúde geral, um <strong>multivitamínico</strong> pode ser uma boa base.
+          </p>
+          <p class="text-xs text-gray-500">
+            *Informação geral. Para necessidades específicas, procure um profissional de saúde.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 py-10">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <p class="font-extrabold text-white text-lg mb-2">PowerNutri ⚡</p>
+          <p class="text-sm text-gray-400">Saúde • Energia • Performance</p>
+        </div>
+
+        <div>
+          <p class="font-extrabold text-white mb-3">Links</p>
+          <ul class="space-y-2 text-sm">
+            <li><a class="hover:text-white transition" href="#produtos">Catálogo</a></li>
+            <li><a class="hover:text-white transition" href="#depoimentos">Depoimentos</a></li>
+            <li><a class="hover:text-white transition" href="#faq">Dúvidas</a></li>
+            <li><a class="hover:text-white transition" href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="font-extrabold text-white mb-3">Contato</p>
+          <ul class="space-y-2 text-sm">
+            <li><i class="fa-brands fa-whatsapp"></i> <a class="hover:text-white transition" href="https://wa.me/5571999530935" target="_blank" rel="noopener">(71) 99953-0935</a></li>
+            <!-- <li><i class="fa-brands fa-instagram"></i> <a class="hover:text-white transition" href="#" target="_blank">@seuinstagram</a></li> -->
+          </ul>
+        </div>
+
+        <div>
+          <p class="font-extrabold text-white mb-3">Aviso</p>
+          <p class="text-sm text-gray-400">
+            Este site direciona para anúncios no Mercado Livre. A compra, pagamento e políticas de devolução são da plataforma.
+          </p>
+          <p class="text-xs text-gray-500 mt-3">
+            © 2025 PowerNutri. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-white/10 text-xs text-gray-500 flex flex-col md:flex-row gap-2 md:items-center md:justify-between">
+        <span>Política de Privacidade (adicione aqui quando tiver)</span>
+        <a href="#topo" class="hover:text-white transition">Voltar ao topo ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO WHATSAPP -->
+  <a id="whatsappBtn"
+     href="https://wa.me/5571999530935?text=Olá, vim pelo site PowerNutri e tenho uma dúvida sobre os suplementos."
+     target="_blank" rel="noopener"
+     class="zap-bounce fixed bottom-5 right-5 bg-green-500 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:bg-green-600 transition z-50"
+     aria-label="Falar no WhatsApp">
+    <i class="fab fa-whatsapp text-3xl"></i>
+  </a>
+
+  <!-- =========================
+       EVENTOS (Meta Pixel)
+  ========================== -->
+  <script>
+    // FAQ accordion
+    (function () {
+      var btns = document.querySelectorAll('.faq-btn');
+      btns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var item = btn.closest('.faq-item');
+          var content = item.querySelector('.faq-content');
+          var icon = btn.querySelector('i');
+
+          var isOpen = !content.classList.contains('hidden');
+
+          // fecha todos (comportamento mais "profissional")
+          document.querySelectorAll('.faq-content').forEach(function (c) { c.classList.add('hidden'); });
+          document.querySelectorAll('.faq-btn i').forEach(function (ic) { ic.style.transform = 'rotate(0deg)'; });
+
+          // abre o clicado se estava fechado
+          if (!isOpen) {
+            content.classList.remove('hidden');
+            icon.style.transform = 'rotate(180deg)';
+          }
+        });
+      });
+    })();
+
+    // 1) ViewContent ao visualizar seção de produtos (1x)
+    (function () {
+      var fired = false;
+      var produtos = document.getElementById('produtos');
+      if (!produtos) return;
+
+      function fireViewContent() {
+        if (fired) return;
+        fired = true;
+        if (typeof fbq === 'function') {
+          fbq('track', 'ViewContent', {
+            content_name: 'Catalogo PowerNutri',
+            content_category: 'Suplementos'
+          });
         }
+      }
 
-        // 1. Rastreia cliques nos botões do Mercado Livre
-        document.querySelectorAll('a[href*="mercadolivre.com"]').forEach(function(botao) {
-            botao.addEventListener('click', function() {
-                // Tenta pegar o nome do produto no H3 mais próximo
-                let nomeProduto = this.closest('div').querySelector('h3') ? this.closest('div').querySelector('h3').innerText : 'Produto Geral';
-                trackCheckout(nomeProduto);
-            });
-        });
-
-        // 2. Rastreia cliques no WhatsApp (Evento Contact)
-        document.querySelector('a[href*="wa.me"]').addEventListener('click', function() {
-            if(typeof fbq !== 'undefined') {
-                fbq('track', 'Contact');
-                console.log('Pixel disparado: Contact (WhatsApp)');
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              fireViewContent();
+              observer.disconnect();
             }
+          });
+        }, { threshold: 0.25 });
+        observer.observe(produtos);
+      } else {
+        window.addEventListener('scroll', fireViewContent, { once: true });
+      }
+    })();
+
+    // 2) Lead no clique do WhatsApp
+    (function () {
+      var wpp = document.getElementById('whatsappBtn');
+      if (!wpp) return;
+      wpp.addEventListener('click', function () {
+        if (typeof fbq === 'function') {
+          fbq('track', 'Lead', { content_name: 'WhatsApp PowerNutri' });
+        }
+      });
+    })();
+
+    // 3) Evento custom outbound nos links do Mercado Livre
+    (function () {
+      var buyLinks = document.querySelectorAll('a.ml-buy');
+      if (!buyLinks || buyLinks.length === 0) return;
+
+      buyLinks.forEach(function (a) {
+        a.addEventListener('click', function () {
+          var product = a.getAttribute('data-product') || 'Produto';
+          var url = a.href;
+          if (typeof fbq === 'function') {
+            fbq('trackCustom', 'OutboundClick', {
+              destination: 'MercadoLivre',
+              product_name: product,
+              outbound_url: url
+            });
+          }
         });
-    </script>
+      });
+    })();
+  </script>
+  <!-- =========================
+       FIM EVENTOS
+  ========================== -->
 
 </body>
 </html>
